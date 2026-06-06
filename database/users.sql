@@ -14,8 +14,7 @@ CREATE TABLE admin (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insert admin: username=admin, password=admin123
--- Hash generated with: password_hash('admin123', PASSWORD_BCRYPT)
+-- Insert admin: username=admin, password=pasword
 INSERT INTO admin (username, password) VALUES (
     'admin',
     '$2y$10$e0NRusJuXMGsNy3dMWJ5JuRtw3VtA5Q9VYMkN8mK2YWLqoV5FcvKG'
