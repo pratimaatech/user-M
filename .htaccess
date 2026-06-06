@@ -1,0 +1,8 @@
+Options -Indexes
+
+# Config folder direct access band karo
+<FilesMatch "\.php$">
+    <If "%{REQUEST_URI} =~ m#/config/#">
+        Require all denied
+    </If>
+</FilesMatch>
